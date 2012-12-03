@@ -1,0 +1,6 @@
+autorun
+sasl.auth
+chat_logs/*
+*.bak
+*.autosave
+*.log

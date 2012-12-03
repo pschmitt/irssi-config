@@ -1,0 +1,2 @@
+#Triggers file version 1.0001
+-privmsgs -command 'exec - echo -e "^tw() ^fg(grey50)$Z> PM from ^fg(#598691)"$\N"\n ^fg(grey50)$Z> ^fg(#598691)"$\N^"fg()> "$\M > ~/.irssi/.irssi_pipe' 
