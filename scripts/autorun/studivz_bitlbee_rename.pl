@@ -1,0 +1,1 @@
+../studivz_bitlbee_rename.pl
