@@ -325,7 +325,13 @@ settings = {
     AUTOLOG = "yes";
     AUTOLOG_PATH = "/home/pschmitt/.irssi/chat_logs/$0.log";
     theme = "lyynx.theme";
+    hilight_color = "%y";
   };
 };
 
 logs = { };
+hilights = (
+  { text = "pschmitt"; nick = "yes"; word = "yes"; regexp = "yes"; },
+  { text = "^pschmitt"; nick = "yes"; word = "yes"; regexp = "yes"; },
+  { text = "^pschmitt:.*"; nick = "yes"; word = "yes"; regexp = "yes"; }
+);

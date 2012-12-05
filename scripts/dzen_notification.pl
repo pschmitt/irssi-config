@@ -33,7 +33,7 @@ sub notify {
     $text =~ s/([\Q$replacement_string\E])/$replacements{$1}/g;
     
     # system("notify-send -t 7500 \"<span color='#ffffff'>".$title."</span>\""." \"".$text."\"");
-    system("echo \"^fg(#40e740)".$title."^fg(#8c8b8e):^fg()\""." \"".$text."\" | dzen2 -p 5 -u -expand 'l' -x '1368' -y 26 -xs 2 -ta 'r' -bg '#161616' -fn 'Profont-12' &");
+    system("echo \"^fg(#40e740)".$title."^fg(#8c8b8e):^fg()\""." \"".$text."\" | dzen2 -p 5 -u -expand 'l' -y 26 -xs 2 -ta 'r' -bg '#161616' -fn 'Sans-12' &");
 }
 
 
