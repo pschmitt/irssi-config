@@ -1,1 +1,0 @@
-../dzen_notification.pl
