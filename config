@@ -1,18 +1,18 @@
 servers = (
   { address = "eu.irc6.net"; chatnet = "IRCnet"; port = "6667"; },
-  { 
+  {
     address = "irc.open-ircnet.net";
     chatnet = "IRCnet";
     port = "6667";
   },
   { address = "irc.efnet.org"; chatnet = "EFNet"; port = "6667"; },
-  { 
+  {
     address = "irc.undernet.org";
     chatnet = "Undernet";
     port = "6667";
   },
   { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; },
-  { 
+  {
     address = "irc.quakenet.org";
     chatnet = "QuakeNet";
     port = "6667";
@@ -42,7 +42,7 @@ servers = (
     use_ssl = "yes";
     ssl_verify = "yes";
     ssl_capath = "/etc/ssl/certs/";
-    autoconnect = "no";
+    autoconnect = "yes";
   },
   {
     address = "localhost";
@@ -62,7 +62,7 @@ chatnets = {
     max_whois = "4";
     max_query_chans = "5";
   };
-  EFNet = { 
+  EFNet = {
     type = "IRC";
     max_kicks = "4";
     max_msgs = "3";
@@ -86,7 +86,7 @@ chatnets = {
     max_msgs = "3";
     max_whois = "30";
   };
-  OFTC = { 
+  OFTC = {
     type = "IRC";
     max_kicks = "1";
     max_msgs = "3";
@@ -104,7 +104,7 @@ chatnets = {
     max_msgs = "3";
     max_whois = "30";
   };
-  Rizon = { 
+  Rizon = {
     type = "IRC";
     max_kicks = "1";
     max_msgs = "3";
@@ -124,7 +124,7 @@ chatnets = {
 channels = (
   { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
   { name = "silc"; chatnet = "silc"; autojoin = "No"; },
-  { name = "#archlinux"; chatnet = "freenode"; autojoin = "No"; },
+  { name = "#archlinux"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "#archlinux-fr"; chatnet = "freenode"; autojoin = "No"; },
   { name = "&bitlbee"; chatnet = "bitlbee"; autojoin = "yes"; }
 );
@@ -301,19 +301,19 @@ settings = {
   core = {
     real_name = "Philipp Schmitt";
     user_name = "pschmitt";
-    nick = "attentah";
+    nick = "pschmitt";
     timestamp_format = "%H:%M:%S";
     recode_fallback = "CP1252";
   };
   "fe-text" = { actlist_sort = "refnum"; };
-  "irc/core" = { alternate_nick = "atthh"; };
+  "irc/core" = { alternate_nick = "pppschmitt"; };
   "perl/core/scripts" = {
     awl_display_key = "$Q%K|%n$H$C$S";
     awl_block = "-15";
     first_away_message = "OK, maybe I won't ever come back...";
     first_away_timeout = "600";
     second_away_timeout = "1800";
-    lastfm_user = "attentah";
+    lastfm_user = "pppschmitt";
     neat_colorize = "yes";
   };
   "fe-common/core" = {
@@ -322,8 +322,8 @@ settings = {
     beep_msg_level = "MSGS NOTICES INVITES DCC DCCMSGS HILIGHT";
     beep_when_window_active = "yes";
     beep_when_away = "yes";
-    AUTOLOG = "yes";
-    AUTOLOG_PATH = "/home/pschmitt/.irssi/chat_logs/$0.log";
+    AUTOLOG = "no";
+    AUTOLOG_PATH = "~/.local/share/irssi/chat_logs/$0.log";
     theme = "lyynx.theme";
     hilight_color = "%y";
   };
